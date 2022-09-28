@@ -3,4 +3,5 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eeeae4;
     box-sizing: border-box; /*to avoid the margin or padding of any elements later */
+    padding: 20px;
 }
