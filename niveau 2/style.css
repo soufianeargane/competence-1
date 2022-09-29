@@ -13,7 +13,7 @@ body{
 
 /* START header */
 header{
-    display: flex;
+    display: flex; /*to make elements come together*/
 }
 header .logo{
     width: 100px;
