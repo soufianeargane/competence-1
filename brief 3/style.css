@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeae4;
+}
+
+.container{
+    padding: 30px;
+}
+
+/* START header */
+header{
+    display: flex; /*to make elements come together*/
+}
+header .logo{
+    width: 100px;
+    color: white;
+    background-color: black;
+    height: 60px;
+    justify-content: center;
+    margin-right: 60px;
+    display: flex;
+    align-items: flex-end;
+}
+header .logo p{
+    margin-bottom: 0;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+/* END header */
+
+/* START section */
+section .links ol{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 0;
+}
+section .links ol li{
+    list-style: none;
+}
+section .links ol li a{
+    color: black;
+    text-decoration: none;
+}
+section .links ol li a:hover{
+    text-decoration: underline;
+}
+section .p{
+    width: 50%;
+    line-height: 1.6;
+}
+
+section .products{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section .products .pro{
+    width: 23%;
+    border: 2px solid black;
+    padding: 12px 50px;
+}
+section .products .pro .img{
+    width: 140px;
+    height: 140px;
+    background-color: aquamarine;
+    padding-top: 60px;
+    padding-left: 11px;
+}
+section .products .pro .img div{
+    margin: 0px;
+}
+section .products .pro p:first-of-type{
+    color: grey;
+}
+section .products .pro p:last-of-type{
+    color: green;
+}
+section .products .pro p span{
+    text-decoration: underline;
+}
+
+@media(max-width: 676px){
+    .container{
+        padding: 0;
+    }
+    header{
+        display: block;
+    }
+    header .logo{
+        text-align: center;
+        margin-left: 168px;
+        width: 168px;
+        height: 120px;
+    }
+    header nav ul{
+        width: calc(100%-20px);
+        padding-left: 0;
+    }
+    section .p{
+        width: 476px;
+    }
+    section .products{
+        display: block;
+    }
+    section .products .pro{
+        width: 450px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 992px ){
+    .products{display: flex; justify-content: space-between; flex-wrap: wrap;}
+    section .products .pro {
+        width: 45%; 
+        margin-bottom: 20px;
+}
+
+/* END section */
