@@ -122,15 +122,34 @@ section .products .pro p span{
     }
     section .products .pro{
         width: 450px;
-        margin-left: 20px;
-        margin-bottom: 10px;
+        margin: 20px auto;
     }
 }
+
 @media(max-width: 992px ){
     .products{display: flex; justify-content: space-between; flex-wrap: wrap;}
-    section .products .pro {
-        width: 45%; 
-        margin-bottom: 20px;
+    section .products .pro {width: 45%;  margin-bottom: 20px;}
 }
+
+@media print {
+    header{display: none;}
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section .products .pro{
+        width: 40%;
+        margin: 0px auto;
+        padding-top:0 ;
+        padding-bottom: 0;
+    }
+    section .products .pro .img{
+        width: 140px;
+        height: 30px;
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+}
+
 
 /* END section */
